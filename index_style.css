@@ -31,7 +31,21 @@
 .css_header_register{
     text-decoration: none;
 }
-
+.css_header_dummystocks{
+    margin: 0px 16px 0px 8px;
+    appearance: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: rgb(240, 185, 11);
+    padding: 6px 16px;
+    min-height: 21px;
+    font-weight: bold;
+    font-family: Georgia;
+    letter-spacing: 1px;
+}
 .css_homepage_header{
     box-sizing: border-box;
     margin: 0;
@@ -45,16 +59,21 @@
     left: 0;
     z-index: 1001;
     color: #fff;
-    height: 64px;
     background-color: #12161C;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+    height: 80px;
     outline: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+body{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
