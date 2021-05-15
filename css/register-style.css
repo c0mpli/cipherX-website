@@ -75,6 +75,14 @@ header{
 }
 
 .btn-createaccount{
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    appearance: none;
+    user-select: none;
+    cursor: pointer;
     display: block;
     margin: auto;
     top: 5em;
