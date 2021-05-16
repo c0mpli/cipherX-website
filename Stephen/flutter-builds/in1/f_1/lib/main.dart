@@ -6,9 +6,7 @@ class Rec extends StatelessWidget {
     return Center(
       child: Container(
         color: Colors.greenAccent,
-        height: 400.0,
-        width: 300.0,
-        child: Center(
+        
           child: Text(
             'Hello!',
             style: TextStyle(fontSize: 40.0),
