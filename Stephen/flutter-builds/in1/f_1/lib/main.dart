@@ -8,7 +8,7 @@ class Rec extends StatelessWidget {
         color: Colors.greenAccent,
         
           child: Text(
-            'Hello!',
+            'Git ignore check!',
             style: TextStyle(fontSize: 40.0),
           ),
         ),
