@@ -19,7 +19,7 @@
                     <input type="text" name="email" placeholder="Email"> <br>   
                     <input type="password" name="password" placeholder="Password"><br> 
                     <input type="text" name="referral" placeholder="Referral ID"><br>
-                    <a href="signup.inc.php" class="createacc-box">
+                    <a href="" class="createacc-box">
                     <button class="btn-createaccount" data-bn-type="button" type ="sumbit" name="submit">Create Account</button>
                     </a> 
                 </form>
