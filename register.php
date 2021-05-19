@@ -15,15 +15,15 @@
             <div class="register-form">
                 <div data-bn-type="text" class = "register-title">Create a free account</div>
                 <div data-bn-type="text" class = "register-subtitle">Welcome to Dummystocks</div>
-                <form action="signup.inc.php" method="post">
+                <form action="includes/signup.inc.php" method="post">
                 <div class="form">
                     <div class = "form-group-email">
                         <label class="label-email">Email</label>
-                        <input type="text" class="form-input" aria-describedby="emailhelp"> 
+                        <input type="text" name = "email" class="form-input" > 
                     </div>
                     <div class = "form-group-pwd">
                         <label class="label-password">Password</label>
-                        <input type="password" class="form-input" name="password">
+                        <input type="password"  class="form-input" name="password">
                     </div>
                     <div class = "form-group-referral">
                         <label class="label-referral">Referral ID(Optional) </label>
@@ -32,7 +32,7 @@
                 
                     
                     <a href="" class="createacc-box">
-                    <button class="btn-createaccount" data-bn-type="button" type ="sumbit" name="submit">Create Account</button>
+                    <button class="btn-createaccount" type="submit" name="submit">Create Account</button>
                     </a> 
                     </div>
                 </form>

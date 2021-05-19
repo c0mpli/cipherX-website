@@ -1,30 +1,23 @@
 <?php
 
-if(isset($_POST["sumbit"])){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $email =$_POST["email"];
-    $pwd = $_POST["pwd"];
+    require_once "dbh.inc.php";
+    require_once "functions.inc.php";
 
-    require_once 'dbh.inc.php';
-    require_once 'fucntions.inc.php';
+    $email = $_POST["email"];
+    $pwd = $_POST["password"];
+    $referral = $_POST["referral"];
 
-    if(emptyInputSignup($email,$pwd) !== false){
-
-      header("location:../register.php?error=emptyinput");
-      exit();
-    }
-
-    if(invalidEmail($email) !== false){
-
-      header("location:../register.php?error=invalidemail");
-      exit();
+    if(emptyInputRegister($email,$pwd) !== FALSE){
+        header("location: ../register.php?error=emptyinput");
+        exit();
     }
 
     createUser($conn,$email,$pwd);
 
-  }
-  else{
-
-    header("location:../register.php");
 }
-
+else{
+    header("location: ../register.php");
+    exit();
+}
