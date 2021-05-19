@@ -3,7 +3,7 @@
     <head>
         <title> DummyStocks | Stocks for Beginners </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/register-style.css">
+        <link rel="stylesheet" href="register-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -15,13 +15,26 @@
             <div class="register-form">
                 <div data-bn-type="text" class = "register-title">Create a free account</div>
                 <div data-bn-type="text" class = "register-subtitle">Welcome to Dummystocks</div>
-                <form class="form" action="includes/signup.inc.php" method="post">
-                    <input type="text" name="email" placeholder="Email"> <br>   
-                    <input type="password" name="password" placeholder="Password"><br> 
-                    <input type="text" name="referral" placeholder="Referral ID"><br>
+                <form action="signup.inc.php" method="post">
+                <div class="form">
+                    <div class = "form-group-email">
+                        <label class="label-email">Email</label>
+                        <input type="text" class="form-input" aria-describedby="emailhelp"> 
+                    </div>
+                    <div class = "form-group-pwd">
+                        <label class="label-password">Password</label>
+                        <input type="password" class="form-input" name="password">
+                    </div>
+                    <div class = "form-group-referral">
+                        <label class="label-referral">Referral ID(Optional) </label>
+                        <input type="text" class="form-input" name="referral">
+                    </div>
+                
+                    
                     <a href="" class="createacc-box">
                     <button class="btn-createaccount" data-bn-type="button" type ="sumbit" name="submit">Create Account</button>
                     </a> 
+                    </div>
                 </form>
             </div>
             </div>
