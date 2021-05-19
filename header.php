@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -10,10 +15,20 @@
         <div class = "homepage">
             <header class= "header">
                 <a href = "index.php" class = "header-dummystocks"> DUMMYSTOCKS </a>
-                <a href = "login.php" class = "header-login"> Log In </a>
-                <a href = "register.php" class="header-register">
-                <button data-bn-type = "button" class="btn-register"> Register </button>
-                </a> 
+                <?php
+                    if(isset($_SESSION["usersEmail"])){
+                        echo "<a href = 'profile.php' class = 'header-login'>Profile</a>";
+                        echo "<a href = 'wallet.php' class = 'header-register'>Wallet</a>";
+                    }
+
+                    else{
+                        echo "<a href = 'login.php' class = 'header-login'> Log In </a>";
+                        echo "<a href = 'register.php' class= 'header-register'>";
+                        echo "<button data-bn-type = 'button' class='btn-register'> Register </button>";
+                        echo "</a>"; 
+                    }
+
+                ?>
                 <a class = "header-download">Download</a>
                 <a href = "help.php" class = "header-help">Help</a>
             </header>

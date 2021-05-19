@@ -3,7 +3,7 @@
     <head>
         <title> DummyStocks | Stocks for Beginners </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="login-style.css">
+        <link rel="stylesheet" href="css/login-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -14,11 +14,11 @@
             <div class="wrapper">
             <div class="register-form">
                 <div data-bn-type="text" class = "register-title">Log In</div>
-                <form action="login.inc.php" method="post">
+                <form action="includes/login.inc.php" method="post">
                 <div class="form">
                     <div class = "form-group">
                         <label class="label-email">Email</label>
-                        <input type="text" class="form-input" aria-describedby="emailhelp"> 
+                        <input type="text" class="form-input" name="email"> 
                     </div>
                     <div class = "form-group-pwd">
                         <label class="label-password">Password</label>
@@ -31,6 +31,20 @@
                     </a> 
                     </div>
                 </form>
+                <?php //to display the error message when filling out forms
+
+                    if(isset($_GET["error"])){
+
+                        if($_GET["error"] == "emptyinput"){
+                            echo "<p>Fill in all fields!</p>";
+                        }
+
+                        else if($_GET["error"] == "incorrectdetails"){
+                            echo "<p>Incorrect Login details!</p>";
+                        }
+                        
+                    }
+                ?>
             </div>
             </div>
             

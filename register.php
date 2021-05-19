@@ -3,7 +3,7 @@
     <head>
         <title> DummyStocks | Stocks for Beginners </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="register-style.css">
+        <link rel="stylesheet" href="css/register-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -36,10 +36,32 @@
                     </a> 
                     </div>
                 </form>
+                
+                <?php //to display the error message when filling out forms
+
+                    if(isset($_GET["error"])){
+
+                        if($_GET["error"] == "emptyinput"){
+                            echo "<p>Fill in all fields!</p>";
+                        }
+
+                        else if($_GET["error"] == "emailexists"){
+                            echo "<p>Email is already registered!</p>";
+                        }
+                        else if($_GET["error"] == "stmtfailed"){
+                            echo "<p>Something went wrong, try again!</p>";
+                        }
+                        else if($_GET["error"] == "none"){
+                            echo "<p>Account created!</p>";
+                        }
+                    }
+                ?>
+                </div>
             </div>
-            </div>
+           
             
         </div>
-
+        
+ 
     </body>
 </html>
