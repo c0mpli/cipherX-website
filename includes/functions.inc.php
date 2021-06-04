@@ -96,3 +96,7 @@ function loginUser($conn,$email,$pwd){
         exit();
     }
 }
+
+function logoutUser(){
+
+}
