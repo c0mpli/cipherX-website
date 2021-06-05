@@ -16,6 +16,7 @@ header{
     position: relative;
     outline: none;
     align-items: center;
+    text-decoration: none;
     
 }
 
@@ -50,11 +51,14 @@ header{
     flex-shrink: 0;
     -webkit-box-align: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     right: 25em;
 }
-
+.header-wallet{
+    
+    color: #ffffff;
+}
 
 .header-logout{
     position: absolute;
@@ -69,9 +73,9 @@ header{
     flex-shrink: 0;
     -webkit-box-align: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: red;
     font-family: Arial, Helvetica, sans-serif;
-    right: 10em;
+    right: 20em;
 }
 .header-download{
     position: absolute;
@@ -91,24 +95,6 @@ header{
     right: 10em;
 }
 .header-help{
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0px;
-    min-width: 0px;
-    padding-left: 8px;
-    padding-right: 16px;
-    font-size: 14px;
-    text-decoration: none;
-    cursor: pointer;
-    flex-shrink: 0;
-    -webkit-box-align: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    right: 5em;
-}
-
-.header-wallet{
     position: absolute;
     box-sizing: border-box;
     margin: 0px;
