@@ -20,8 +20,8 @@
                     if(isset($_SESSION["usersEmail"])){
                         echo "<a href = 'homepage.php' class = 'header-dummystocks'> DUMMYSTOCKS </a>";
                         echo "<a href = 'profile.php' class = 'header-login'>Profile</a>";
-                        echo "<a href = 'wallet.php' class = 'header-register'>Wallet</a>";
-                        echo "<a href = 'includes/logout.inc.php' class= 'header-logout'>";
+                        echo "<a href = 'wallet.php' class = 'header-download'>Wallet</a>";
+                        echo "<a href = 'includes/logout.inc.php' class= 'header-register'>";
                         echo "<button data-bn-type = 'button' class='btn-register'> Logout </button>";
                         echo "</a>";
 
@@ -30,12 +30,13 @@
                     else{
                         echo "<a href = 'index.php' class = 'header-dummystocks'> DUMMYSTOCKS </a>";
                         echo "<a href = 'login.php' class = 'header-login'> Log In </a>";
+                        echo "<a class = 'header-download'>Download</a>";
                         echo "<a href = 'register.php' class= 'header-register'>";
                         echo "<button data-bn-type = 'button' class='btn-register'> Register </button>";
                         echo "</a>"; 
                     }
 
                 ?>
-                <a class = "header-download">Download</a>
+                
                 <a href = "help.php" class = "header-help">Help</a>
             </header>
