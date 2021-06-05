@@ -1,4 +1,4 @@
-package com.example.d_stocks
+package com.compli.stocki
 
 import io.flutter.embedding.android.FlutterActivity
 

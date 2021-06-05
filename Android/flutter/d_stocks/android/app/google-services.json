@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "726351274602",
+    "firebase_url": "https://stocki-startup-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "stocki-startup",
+    "storage_bucket": "stocki-startup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726351274602:android:c5e4bcf95e84d1bf7e6013",
+        "android_client_info": {
+          "package_name": "com.compli.stocki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726351274602-0qvq8a4hdp0ffljoi1kr9kaqb9a40qvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw16WQy15q6ZUEB6I_ulcTGQ4YlLbwM_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726351274602-0qvq8a4hdp0ffljoi1kr9kaqb9a40qvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
