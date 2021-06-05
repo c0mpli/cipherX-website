@@ -2,6 +2,8 @@
 
 ## This code is meant to be run only once to insert the fixed values into the firebase database
 
+## DO NOT RUN THIS CODE!
+
 from selenium import webdriver
 from dbHandler import create
 
