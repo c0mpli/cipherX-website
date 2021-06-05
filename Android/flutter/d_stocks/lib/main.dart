@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:d_stocks/login.dart';
+
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  const MyApp({ Key? key }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'DummyStocks',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+    return Container(
+      
     );
   }
 }
-
-
