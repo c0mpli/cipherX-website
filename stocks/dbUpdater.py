@@ -6,7 +6,7 @@ from selenium import webdriver
 from dbHandler import update
 from datetime import datetime
 from datetime import date
-
+from datetime import time
 
 option = webdriver.ChromeOptions()
 option.add_argument('headless')
@@ -15,11 +15,12 @@ browser = webdriver.Chrome('C:\\Users\Jash\Downloads\chromedriver_win32\chromedr
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
-opening_time = now.replace(hour=9, minute=0, second=0, microsecond=0)
-closing_time = now.replace(hour=15, minute=30, second=0, microsecond=0)
+opening_time = time(9,0,0)
+closing_time = time(15,30,0)
 day = date.today().strftime("%A")
 
-if (str(current_time)>str(opening_time) and current_time<closing_time and day != "Saturday" and day!="Sunday" ):
+
+if (str(current_time)>str(opening_time) and str(current_time)<str(closing_time) and day != "Saturday" and day!="Sunday" ):
     f= open("C:\\Users\Jash\DummyStocks\stocks\stocknames.txt",'r')
     for line in f: #automated updates
         shortname = line
@@ -35,9 +36,10 @@ if (str(current_time)>str(opening_time) and current_time<closing_time and day !=
         percentage = percentage.replace(")","")
         
         update(shortname.rstrip("\n"),price,movement,percentage)
-        c = c+1
-        print(c)
+        #c = c+1 (c undefined)
+        #print(c)
     f.close()
+    browser.quit()
 
 else:
     print("The market working hours are over")
