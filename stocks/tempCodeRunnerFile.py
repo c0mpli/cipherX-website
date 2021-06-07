@@ -1,0 +1,1 @@
+current_time<closing_time and day != "Saturday" and day!="Sunday"

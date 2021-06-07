@@ -4,14 +4,14 @@
 from pyrebase import pyrebase
 
 firebaseConfig = {
-  "apiKey": "AIzaSyBwAprOAtYVPb3G11tthzYFFFMwc5_SZN4",
-  "authDomain": "dummystocks-1424b.firebaseapp.com",
-  "databaseURL": "https://dummystocks-1424b-default-rtdb.asia-southeast1.firebasedatabase.app",
-  "projectId": "dummystocks-1424b",
-  "storageBucket": "dummystocks-1424b.appspot.com",
-  "messagingSenderId": "318536225355",
-  "appId": "1:318536225355:web:5e23a094990609c1f733ce",
-  "measurementId": "G-TCVBGSR5BC"
+  "apiKey": "AIzaSyDUldARRvm9et4hhkpHAo6IzRxuobwvoTc",
+  "authDomain": "stocki-startup.firebaseapp.com",
+  "databaseURL": "https://stocki-startup-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "projectId": "stocki-startup",
+  "storageBucket": "stocki-startup.appspot.com",
+  "messagingSenderId": "726351274602",
+  "appId": "1:726351274602:web:1c10aafc51fd103c7e6013",
+  "measurementId": "G-67Y7RBS6BV"
 }
 
 

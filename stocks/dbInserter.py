@@ -11,7 +11,7 @@ option = webdriver.ChromeOptions()
 option.add_argument('headless')
 browser = webdriver.Chrome('C:\\Users\Jash\Downloads\chromedriver_win32\chromedriver.exe',options=option)
 
-f= open("C:\\Users\Jash\DummyStocks\stocks\stocknames.txt",'r')
+f= open("C:\\Users\Jash\Stocki\Stocki\stocks\stocknames.txt",'r')
 c = 0
 
 for line in f: #automated entries
@@ -32,6 +32,7 @@ for line in f: #automated entries
     c = c+1
     print(c)
 f.close()
+browser.quit()
 
 
 
