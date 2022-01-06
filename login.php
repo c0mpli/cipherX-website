@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title> DummyStocks | Stocks for Beginners </title>
+        <title> CipherX | Crypto for Beginners </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/login-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <body>
         <div class = "registerpage">
             <header class= "header">
-                <a href = "index.php" class = "header-dummystocks"> DUMMYSTOCKS </a>
+                <a href = "index.php" class = "header-dummystocks"> CIPHERX </a>
             </header>
             <div class="wrapper">
             <div class="register-form">

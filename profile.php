@@ -1,15 +1,15 @@
 <html>
 <head>
-<title> Help| DummyStocks</title>
+<title> Profile | CipherX</title>
 </head>
 <body>
 
 <?
-require_once "logim.inc.php";
+require_once "login.inc.php";
 echo $email;
 
 ?>
-<h1> This is the profilepage </h1>
+<h1> This is the profilepage</h1>
 
 </body>
 </html>
