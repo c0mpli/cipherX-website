@@ -33,6 +33,12 @@ def update(c,price,perc):
     firebase = pyrebase.initialize_app(firebaseConfig)
     database = firebase.database()
     database.child('CCs').child(c).update({"price":price})
-    database.child('CCs').child(c).update({"percentage":perc})
+    database.child('CCs').child(c).update({"percentage":perc})\
 
+
+def fetch():
+    firebase = pyrebase.initialize_app(firebaseConfig)
+    database = firebase.database()
+    print(database.child('CCs').get().val())
   
+fetch()

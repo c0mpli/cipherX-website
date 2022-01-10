@@ -30,7 +30,7 @@ for line in f: #automated updates
     shrt_name = name.split()[1]
     name = name.split()[0]
     c = c+1
-    
+    print(c)
     update(c,price,perc)
     #print(c, name, shrt_name, price, perc)
     

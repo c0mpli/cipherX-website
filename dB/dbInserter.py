@@ -17,7 +17,7 @@ browser = webdriver.Chrome('D:\\Users\Stephen\Dev\Git\Python\chromedriver.exe',o
 def insert():
     
     #always use own file path for names.txt for script execute
-    f= open("lib\dbCryptoData\\names.txt",'r')
+    f= open("dB\\names.txt",'r')
     c = 0
     
     for line in f: #automated updates
