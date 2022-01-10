@@ -1,0 +1,10 @@
+bitcoin
+ethereum
+binance-coin
+cardano
+dogecoin
+xrp
+solana
+chainlink
+polygon
+vechain
