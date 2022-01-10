@@ -1,12 +1,13 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-import { getDatabase,ref,get, child } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+
+//import { } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-SERVICE.js'
+//(where SERVICE is an SDK name such as firebase-firestore).
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
   apiKey: "AIzaSyDoocTiTnn_k9Ige_yhj3vv2v0ddRjxbT0",
   authDomain: "cipherx-b081d.firebaseapp.com",
@@ -20,26 +21,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const fb = getDatabase(app);
 
-//ref
-var testlabel = document.getElementById("testlabel");
-var x = 1;
-var button_test = document.getElementById("viewData");
-var cB = document.getElementById("cOuNt");
-function RetrieveData() {
-    get(child(ref(fb), "CCs/"+x)).then((snapshot) => {
-        if(snapshot.exists()) {
-            testlabel.innerHTML = snapshot.val().name;
-        }
-        else {
-            console.log("No data");
-        }
-    });
-}
-function Incr() {
-    x++;
-}
-
-button_test.addEventListener("click", RetrieveData);
-cB.addEventListener("click", Incr);
+export {app};
