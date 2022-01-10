@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+import { getDatabase,ref,get, child } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,4 +20,26 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const fb = getDatabase(app);
+
+//ref
+var testlabel = document.getElementById("testlabel");
+var x = 1;
+var button_test = document.getElementById("viewData");
+var cB = document.getElementById("cOuNt");
+function RetrieveData() {
+    get(child(ref(fb), "CCs/"+x)).then((snapshot) => {
+        if(snapshot.exists()) {
+            testlabel.innerHTML = snapshot.val().name;
+        }
+        else {
+            console.log("No data");
+        }
+    });
+}
+function Incr() {
+    x++;
+}
+
+button_test.addEventListener("click", RetrieveData);
+cB.addEventListener("click", Incr);
