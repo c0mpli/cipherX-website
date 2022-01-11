@@ -18,6 +18,11 @@ if(isset($_POST["submit"])){
         header("location: ../register.php?error=emailexists");
         exit();
     }
+    if(invalidEmail($email) !== FALSE){
+        header("location: ../register.php?error=invalidemail");
+        exit();
+    }
+
 
     createUser($conn,$email,$pwd);
 

@@ -13,7 +13,17 @@ function emptyInputRegister($email,$pwd){
 
 }
 
+function invalidEmail($email){
+    $result = FALSE;
 
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $result = TRUE;
+    }
+    else{
+        $result = FALSE;
+    }
+   return $result;
+}
 
 function emailExists($conn,$email){
    $sql = "SELECT * FROM users WHERE usersEmail = ?;";

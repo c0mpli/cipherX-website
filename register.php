@@ -25,12 +25,7 @@
                         <label class="label-password">Password</label>
                         <input type="password"  class="form-input" name="password">
                     </div>
-                    <div class = "form-group-referral">
-                        <label class="label-referral">Referral ID(Optional) </label>
-                        <input type="text" class="form-input" name="referral">
-                    </div>
                 
-                    
                     <a href="" class="createacc-box">
                     <button class="btn-createaccount" type="submit" name="submit">Create Account</button>
                     </a> 
@@ -50,6 +45,9 @@
                         }
                         else if($_GET["error"] == "stmtfailed"){
                             echo "<p>Something went wrong, try again!</p>";
+                        }
+                        else if($_GET["error"] == "invalidemail"){
+                            echo "<p>Enter a valid email!</p>";
                         }
                         else if($_GET["error"] == "none"){
                             echo "<p>Account created!</p>";
