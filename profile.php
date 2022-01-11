@@ -6,7 +6,6 @@
 
 <?
 require_once "login.inc.php";
-echo $email;
 
 ?>
 <h1> This is the profilepage</h1>
